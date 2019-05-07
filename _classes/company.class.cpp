@@ -11,9 +11,19 @@ Company::Company(string name, string cnpj, vector<Employee*> employees){
 	this->employees	= employees;
 }
 
+void Company::showEmployees(void){
+	for(int i = 0; i < this->getNumEmployees();i++){
+		this->getEmployees()[i]->showEmployee();
+	}
+}
+
 /**
  * Funções Get
  * */
+
+int Company::getNumEmployees(){
+	return (int)this->getEmployees().size();
+}
 
 string Company::getName(void){
 	return this->name;
@@ -36,6 +46,15 @@ void Company::setCNPJ(string cnpj){
 	this->cnpj = cnpj;
 }
 
+/*
+*
+* */
+void Company::increaseSalary(float increase){
+	for(int i = 0;i < this->getNumEmployees();i++){
+		this->getEmployees()[i]->setSalary((increase/100)*this->getEmployees()[i]->getSalary() + this->getEmployees()[i]->getSalary());
+	}
+}
+
 /**
  * Funções Add
  * */
@@ -48,9 +67,9 @@ void Company::addEmployee(Employee *e){
  * Funções Deletes
  * */
 
-void 	Company::deleteEmployee(Employee *e){
+void Company::deleteEmployee(Employee *e){
 
-	for(int i = 0; i < this->employees.size();i++){
+	for(unsigned int i = 0; i < this->employees.size();i++){
 		if(e->getID() == this->employees[i]->getID()){
 			this->employees.erase(this->employees.begin() + i);
 		}

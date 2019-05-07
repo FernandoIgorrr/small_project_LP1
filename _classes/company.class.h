@@ -18,9 +18,13 @@ class Company{
 		 * Constructor
 		 */
 		Company(string newName, string newCNPJ, vector<Employee*> newEmployees);
+		
+		void showEmployees(void);
+
 		/**
 		 * Funções Get
 		 * */
+		int getNumEmployees();
 		string getName(void);
 		string getCNPJ(void);
 		vector<Employee*> getEmployees(void);
@@ -31,6 +35,12 @@ class Company{
 		void setName(string newName);	
 		void setCNPJ(string newCNPJ);
 		
+		/**
+		* Funções increaseSalary
+		* */
+
+		void increaseSalary(float increase);
+
 		/**
 		 * Funções Add
 		 * */
