@@ -9,7 +9,7 @@ using namespace std;
 
 
 /**
-* @brief Classe Company
+* @brief Classe Company, Classe responsável por representar uma representar uma empresa com seus métodos e atributos
 * @author Fernando Iogr Dantas
 *
 * @since 06-05-2019

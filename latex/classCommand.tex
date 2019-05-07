@@ -1,0 +1,172 @@
+\hypertarget{classCommand}{}\section{Command Class Reference}
+\label{classCommand}\index{Command@{Command}}
+
+
+Classe \hyperlink{classCommand}{Command}, reponsável por pegar, válidar, filtar e executar os comandos dados.  
+
+
+
+
+{\ttfamily \#include $<$command.\+class.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCommand_aa66130359570f527b42300633e35f8c2}{Command} (string cmd)
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{classCommand_aadc7d1f81a2f438f53c15f31e77ba8aa}{get\+Command} ()
+\begin{DoxyCompactList}\small\item\em pega o comando \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{classCommand_a591435fa9400bb5c13150092ee3b1c70}{get\+Words} (string cmd)
+\begin{DoxyCompactList}\small\item\em quebra o comando em vetor de palavras para ser filtrado/executado/validado \end{DoxyCompactList}\item 
+int \hyperlink{classCommand_a966fc59f6572e832e85b1791479714c4}{get\+Num\+Words} ()
+\begin{DoxyCompactList}\small\item\em pega o número de palavras que o comando tem \end{DoxyCompactList}\item 
+void \hyperlink{classCommand_a911de585d69707fce024dcbdd7bba32f}{send\+Command} ()
+\begin{DoxyCompactList}\small\item\em envia o comando para ser executado \end{DoxyCompactList}\item 
+int \hyperlink{classCommand_ac90a4a22d91ef08297c0aeb4368f8393}{validate\+Command} ()
+\begin{DoxyCompactList}\small\item\em valida o comando para depois ser enviado para ser executado \end{DoxyCompactList}\item 
+int \hyperlink{classCommand_ae9f0a3ba183b25d7824f70254df8a232}{execute\+Command} ()
+\begin{DoxyCompactList}\small\item\em executa o comando após ser filtrado e validado respectivamente \end{DoxyCompactList}\item 
+void \hyperlink{classCommand_adb45fb42d7bf3784bb5d9f85ea71941a}{error\+Handling} (int error)
+\begin{DoxyCompactList}\small\item\em ler um número (das funções de validações e execuções) e exibe o erro respectivo ao número na tela \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommand_a1194b3db269800db66d5b2dbce154872}\label{classCommand_a1194b3db269800db66d5b2dbce154872}} 
+void \hyperlink{classCommand_a1194b3db269800db66d5b2dbce154872}{man} (void)
+\begin{DoxyCompactList}\small\item\em Exibe o manual do programa na tela. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommand_af7f2f0883b59d60957a6b2bc11db755c}\label{classCommand_af7f2f0883b59d60957a6b2bc11db755c}} 
+void \hyperlink{classCommand_af7f2f0883b59d60957a6b2bc11db755c}{clear} (void)
+\begin{DoxyCompactList}\small\item\em Limpa o console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe \hyperlink{classCommand}{Command}, reponsável por pegar, válidar, filtar e executar os comandos dados. 
+
+\begin{DoxyAuthor}{Author}
+Fernando Iogr Dantas
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+06-\/05-\/2019 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCommand_aa66130359570f527b42300633e35f8c2}\label{classCommand_aa66130359570f527b42300633e35f8c2}} 
+\index{Command@{Command}!Command@{Command}}
+\index{Command@{Command}!Command@{Command}}
+\subsubsection{\texorpdfstring{Command()}{Command()}}
+{\footnotesize\ttfamily Command\+::\+Command (\begin{DoxyParamCaption}\item[{string}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Construtor padrão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Recebe} & a tring cmd (comando) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommand_adb45fb42d7bf3784bb5d9f85ea71941a}\label{classCommand_adb45fb42d7bf3784bb5d9f85ea71941a}} 
+\index{Command@{Command}!error\+Handling@{error\+Handling}}
+\index{error\+Handling@{error\+Handling}!Command@{Command}}
+\subsubsection{\texorpdfstring{error\+Handling()}{errorHandling()}}
+{\footnotesize\ttfamily void Command\+::error\+Handling (\begin{DoxyParamCaption}\item[{int}]{error }\end{DoxyParamCaption})}
+
+
+
+ler um número (das funções de validações e execuções) e exibe o erro respectivo ao número na tela 
+
+
+\begin{DoxyParams}{Parameters}
+{\em um} & inteiro que representa o núero do erro \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommand_ae9f0a3ba183b25d7824f70254df8a232}\label{classCommand_ae9f0a3ba183b25d7824f70254df8a232}} 
+\index{Command@{Command}!execute\+Command@{execute\+Command}}
+\index{execute\+Command@{execute\+Command}!Command@{Command}}
+\subsubsection{\texorpdfstring{execute\+Command()}{executeCommand()}}
+{\footnotesize\ttfamily int Command\+::execute\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+executa o comando após ser filtrado e validado respectivamente 
+
+\begin{DoxyReturn}{Returns}
+Retorna 1 caso o comando tenha sido executado com sucesso, caso contráio, reotrna 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCommand_aadc7d1f81a2f438f53c15f31e77ba8aa}\label{classCommand_aadc7d1f81a2f438f53c15f31e77ba8aa}} 
+\index{Command@{Command}!get\+Command@{get\+Command}}
+\index{get\+Command@{get\+Command}!Command@{Command}}
+\subsubsection{\texorpdfstring{get\+Command()}{getCommand()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Command\+::get\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+pega o comando 
+
+\begin{DoxyReturn}{Returns}
+Retorna um vetor de string (onde cada string do vetor é uma palavra do comando) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCommand_a966fc59f6572e832e85b1791479714c4}\label{classCommand_a966fc59f6572e832e85b1791479714c4}} 
+\index{Command@{Command}!get\+Num\+Words@{get\+Num\+Words}}
+\index{get\+Num\+Words@{get\+Num\+Words}!Command@{Command}}
+\subsubsection{\texorpdfstring{get\+Num\+Words()}{getNumWords()}}
+{\footnotesize\ttfamily int Command\+::get\+Num\+Words (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+pega o número de palavras que o comando tem 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCommand_a591435fa9400bb5c13150092ee3b1c70}\label{classCommand_a591435fa9400bb5c13150092ee3b1c70}} 
+\index{Command@{Command}!get\+Words@{get\+Words}}
+\index{get\+Words@{get\+Words}!Command@{Command}}
+\subsubsection{\texorpdfstring{get\+Words()}{getWords()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Command\+::get\+Words (\begin{DoxyParamCaption}\item[{string}]{cmd }\end{DoxyParamCaption})}
+
+
+
+quebra o comando em vetor de palavras para ser filtrado/executado/validado 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna um vetor de string (onde cada string do vetor é uma palavra do comando) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCommand_a911de585d69707fce024dcbdd7bba32f}\label{classCommand_a911de585d69707fce024dcbdd7bba32f}} 
+\index{Command@{Command}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Command@{Command}}
+\subsubsection{\texorpdfstring{send\+Command()}{sendCommand()}}
+{\footnotesize\ttfamily void Command\+::send\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+envia o comando para ser executado 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCommand_ac90a4a22d91ef08297c0aeb4368f8393}\label{classCommand_ac90a4a22d91ef08297c0aeb4368f8393}} 
+\index{Command@{Command}!validate\+Command@{validate\+Command}}
+\index{validate\+Command@{validate\+Command}!Command@{Command}}
+\subsubsection{\texorpdfstring{validate\+Command()}{validateCommand()}}
+{\footnotesize\ttfamily int Command\+::validate\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+valida o comando para depois ser enviado para ser executado 
+
+\begin{DoxyReturn}{Returns}
+Retorna 1 caso o comando for valido, caso contráio, reotrna 0 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+classes/command.\+class.\+h\item 
+\+\_\+classes/command.\+class.\+cpp\end{DoxyCompactItemize}

@@ -9,7 +9,7 @@ using namespace std;
 
 
 /**
-* @brief Classe Employee
+* @brief Classe Company, Classe responsável por representar uma representar uma funcionário com seus métodos e atributos
 * @author Fernando Iogr Dantas
 *
 * @since 06-05-2019
@@ -26,9 +26,9 @@ class Employee{
 	public:
 		/**
 		* @brief Construtor padrão
-		* @param data de admissão
+		* @param "data de admissão"
 		* @param id
-		* @param name
+		* @param nome
 		* @param salário
 		* */
 		Employee(string _admissionDate, string _ID,string _name,float _salary);

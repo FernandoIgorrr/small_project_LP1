@@ -7,7 +7,7 @@
 using namespace std;
 
 /**
-* @brief Classe Database on ficam salvo os dados em tempo de execução visto que não foi ultilizado banco de dos nem manipulação de arquivos
+* @brief Classe Database onde ficam salvo os dados em tempo de execução visto que não foi ultilizado banco de dos nem manipulação de arquivos
 * @author Fernando Iogr Dantas
 *
 * @since 06-05-2019
