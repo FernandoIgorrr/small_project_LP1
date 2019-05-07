@@ -1,8 +1,8 @@
 # small_project_LP1
 A small project for college
 
- - Copie o projeto para seu computador com o comando:
-		`git clone https://github.com/FernandoIgorrr/SGBDinC.git`
+ - Copie o projeto para seu computador com o comando:<br />
+		`git clone https://github.com/FernandoIgorrr/small_project_LP1.git`
  - Complile-o:<br />
     `make`
  - Execute o binário:<br />
