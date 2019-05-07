@@ -11,12 +11,7 @@ vector<Company*> companies;
 
 Database *b = new Database(companies);
 
-
 using namespace std;
-
-/**
-* Constructor
-* */
 
 Command::Command(string command){
 
@@ -116,6 +111,7 @@ int Command::validateCommand(){
 	}
 
 }
+
 
 int Command::executeCommand(){
 	
@@ -330,8 +326,8 @@ int Command::executeCommand(){
 		}
 	}
 	return 0;
-}
 
+}
 
 vector<string> Command::getWords(string command){
 
@@ -349,6 +345,7 @@ vector<string> Command::getWords(string command){
 	}
 
 	return commandWords;
+
 }
 
 void Command::man(void){
@@ -376,16 +373,13 @@ void Command::man(void){
 	cout << "#	quit								- Sair do sistema				 #\n";
 	cout << "#															 #\n";
 	cout << "##########################################################################################################################\n\n";
+
 }
 
 void Command::clear(void){
 	system("clear");
 }
 
-/**
-* Destructor
-* */
-
 Command::~Command(){
-	//Default destructor
+
 }
